@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default params</title>
+</head>
+<body>
+    <script>
+        function salaryCalculate(salary,inc=5){
+           if(inc>5){
+            incSalary = salary+salary*0.1
+            return incSalary
+           }
+           else{
+            incSalary = salary+salary*0.05
+            return incSalary
+           }
+        }
+       console.log(salaryCalculate(100000,10))
+       
+    </script>
+</body>
+</html>
